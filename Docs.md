@@ -23,7 +23,9 @@ To be able to develop this app you will require several things:
 Here's a compilation of all the resources used to develop this app, as you will see, most of the sources are tutorials and the official documents from Firebase.
 
 **Firebase**
-[Firebase Docs for Android](ttps://firebase.google.com/docs/android/setup?authuser=0)
+[Firebase Docs for Android](https://firebase.google.com/docs/android/setup?authuser=0)
+
+
 [Firebase AutoML Vision Edge](https://firebase.google.com/docs/ml-kit/automl-image-labeling?authuser=0)
 
 **CameraView**
