@@ -1,3 +1,4 @@
 <resources>
-    <string name="app_name">Maydaykt</string>
+    <string name="app_name">MayDay CV</string>
+    <string name="title_activity_product_info">ProductInfo</string>
 </resources>

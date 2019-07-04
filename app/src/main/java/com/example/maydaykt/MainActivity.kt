@@ -20,7 +20,7 @@ import com.otaliastudios.cameraview.Frame
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
-
+    var id=""
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
@@ -63,12 +63,13 @@ class MainActivity : AppCompatActivity() {
                 it.forEach { item ->
                     result = "${item.text}\n"  //TODO : Get the knowledge graph result for this entity
                     Log.e("TAG",item.text)
+                    id=item.text
                     Log.e("TAG",""+item.confidence)
                 }
                 callback(result)
             }
             .addOnFailureListener {
-                callback("No se puede detectar un objeto")
+                callback("No se ha podido detectar productos")
             }
             .addOnCompleteListener {
 
@@ -92,8 +93,13 @@ class MainActivity : AppCompatActivity() {
 
         return image
     }
-    fun regrear(view: View){
+    fun regresar(view: View){
         val intent= Intent(this, Menu::class.java)
+        startActivity(intent)
+    }
+    fun producto(view: View){
+        var intent=Intent(this,products::class.java)
+        intent.putExtra("id",id)
         startActivity(intent)
     }
 }
