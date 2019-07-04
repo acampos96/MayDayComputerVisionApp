@@ -39,6 +39,6 @@ dependencies {
     implementation 'com.google.firebase:firebase-ml-vision-object-detection-model:17.0.0'
     implementation 'com.google.firebase:firebase-ml-vision-automl:17.0.0'
     implementation 'com.google.firebase:firebase-auth:18.0.0'
-   // implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
+    //implementation 'com.firebaseui:firebase-ui-auth:4.3.1'
 }
 apply plugin: 'com.google.gms.google-services'
