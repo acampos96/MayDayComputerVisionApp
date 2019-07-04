@@ -1,8 +1,10 @@
 package com.example.maydaykt
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.view.View
 import com.google.firebase.ml.common.modeldownload.FirebaseLocalModel
 import com.google.firebase.ml.common.modeldownload.FirebaseModelDownloadConditions
 import com.google.firebase.ml.common.modeldownload.FirebaseModelManager
@@ -90,5 +92,8 @@ class MainActivity : AppCompatActivity() {
 
         return image
     }
-
+    fun regrear(view: View){
+        val intent= Intent(this, Menu::class.java)
+        startActivity(intent)
+    }
 }
